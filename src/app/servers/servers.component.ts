@@ -24,6 +24,7 @@ export class ServersComponent implements OnInit {
 
   onCreateServer(){
     this.serverCreationStatus = 'Server was created!';
+    console.log('Message send to the console');
   }
 
 }
