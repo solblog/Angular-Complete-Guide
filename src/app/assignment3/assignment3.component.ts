@@ -9,19 +9,18 @@ export class Assignment3Component implements OnInit {
 
   displayedParagraph = false;
   logClicks = [];
+  logStatus: string = 'lowerThanFive';
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
 
   onDisplay() {
     this.logClicks.push(Date.now());
+    // this.logClicks.push(this.logClicks.length + 1);
   }
-
-  getColor() {
-    if logClicks.
-  }
-
 
 }

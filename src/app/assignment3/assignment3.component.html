@@ -15,7 +15,7 @@
         <p *ngIf="displayedParagraph">
             Secret word : Tuna
         </p>
-        <p *ngFor="let logEvent of logClicks" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="moreThanFive? 'moreThanFive':'lessOrEqualThanFive'">
+        <p *ngFor="let logEvent of logClicks;let i = index" [ngStyle]="{backgroundColor: i>= 5?'blue': 'transparent'}" [ngClass]="{'white-text': i>= 5}">
           {{logEvent}}
         </p>
       </div>
